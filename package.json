@@ -4,7 +4,11 @@
   "module": "index.ts",
   "scripts": {
     "test": "bun test",
-    "lint": "eslint"
+    "lint": "eslint",
+    "pretty": "prettier . --write",
+    "pretty:check": "prettier . --check",
+    "clean": "rm -rf ./dist",
+    "build": "bun run clean && bun build src/index.ts --outdir ./dist --target node"
   },
   "type": "module",
   "devDependencies": {

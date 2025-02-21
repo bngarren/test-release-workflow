@@ -1,5 +1,5 @@
-import neostandard, { resolveIgnoresFromGitignore } from "neostandard";
-import eslintConfigPrettier from "eslint-config-prettier";
+import neostandard, { resolveIgnoresFromGitignore } from "neostandard"
+import eslintConfigPrettier from "eslint-config-prettier"
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -8,5 +8,5 @@ export default [
     noStyle: true,
     ts: true,
   }),
-  eslintConfigPrettier
-];
+  eslintConfigPrettier,
+]
