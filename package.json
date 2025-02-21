@@ -1,9 +1,23 @@
 {
   "name": "test-release-workflow",
+  "version": "0.0.1",
   "module": "index.ts",
+  "scripts": {
+    "test": "bun test",
+    "lint": "eslint",
+    "pretty": "prettier . --write",
+    "pretty:check": "prettier . --check",
+    "clean": "rm -rf ./dist",
+    "build": "bun run clean && bun build src/index.ts --outdir ./dist --target node"
+  },
   "type": "module",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "neostandard": "^0.12.1",
+    "prettier": "3.5.1",
+    "typescript-eslint": "^8.24.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
