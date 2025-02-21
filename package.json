@@ -1,5 +1,6 @@
 {
   "name": "test-release-workflow",
+  "version": "0.0.1",
   "module": "index.ts",
   "scripts": {
     "test": "bun test",
