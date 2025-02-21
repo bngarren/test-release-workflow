@@ -1,4 +1,4 @@
-import neostandard, { resolveIgnoresFromGitignore, plugins } from "neostandard";
+import neostandard, { resolveIgnoresFromGitignore } from "neostandard";
 import eslintConfigPrettier from "eslint-config-prettier";
 
 /** @type {import('eslint').Linter.Config[]} */
