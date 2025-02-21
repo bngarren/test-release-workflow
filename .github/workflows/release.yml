@@ -48,7 +48,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
       - name: Set Git User
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
